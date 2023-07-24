@@ -1,0 +1,6 @@
+scikit-image==0.18.1
+transformers==4.10.2
+tqdm
+regex
+ftfy
+git+https://github.com/openai/CLIP.git
