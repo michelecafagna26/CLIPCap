@@ -1,4 +1,4 @@
-# CLIPCap
+# ClipCap
 
 Implementation of **"ClipCap: CLIP Prefix for Image Captioning"** ["ClipCap: CLIP Prefix for Image Captioning"](https://arxiv.org/abs/2111.09734).
 
