@@ -9,7 +9,7 @@ setup(
     version="1.0",
     description="",
     author="Michele Cafagna",
-    packages=find_packages(["notebooks*"]),
+    packages=find_packages(),
     install_requires=[
         str(r)
         for r in pkg_resources.parse_requirements(
