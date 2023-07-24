@@ -105,7 +105,7 @@ class ClipCaptionModel(nn.Module):
         self.eval()
         generated_num = 0
         generated_list = []
-        stop_token_index = tokenizer.encode(stop_token)[0]
+        stop_token_index = self.tokenizer.encode(stop_token)[0]
         filter_value = -float("Inf")
         device = next(self.parameters()).device
 
@@ -116,7 +116,7 @@ class ClipCaptionModel(nn.Module):
                     generated = embed
                 else:
                     if tokens is None:
-                        tokens = torch.tensor(tokenizer.encode(prompt))
+                        tokens = torch.tensor(self.tokenizer.encode(prompt))
                         tokens = tokens.unsqueeze(0).to(device)
 
                     generated = self.gpt.transformer.wte(tokens)
@@ -149,7 +149,7 @@ class ClipCaptionModel(nn.Module):
                         break
 
                 output_list = list(tokens.squeeze().cpu().numpy())
-                output_text = tokenizer.decode(output_list)
+                output_text = self.tokenizer.decode(output_list)
                 generated_list.append(output_text)
 
         return generated_list[0]
@@ -239,6 +239,8 @@ class ClipCaptionModel(nn.Module):
 
         try:
             self.load_state_dict(ckpt)
+
+        # This probably not needed anymore
         except RuntimeError: # Try removing probable extra keys
 
             from collections import OrderedDict
