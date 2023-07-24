@@ -1,5 +1,4 @@
-scikit-image==0.18.1
-transformers==4.10.2
+transformers==4.16.0
 tqdm
 regex
 ftfy
