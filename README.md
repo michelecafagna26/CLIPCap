@@ -7,16 +7,16 @@ This repo contains the code to run ClipCap finetuned on the [HL and HL-Narrative
 - [hl-narratives](https://huggingface.co/datasets/michelecafagna26/hl-narratives)
 
 We provide ClipCap **fine-tuned models** (all available on 🤗) for :
-- Scene generation **[clipcap-base-captioning-ft-hl-scenes]()**
-- Action generation **[clipcap-base-captioning-ft-hl-actions]()**
-- Rationale  generation **[clipcap-base-captioning-ft-hl-rationales]()**
+- Scene generation **[clipcap-base-captioning-ft-hl-scenes](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-scenes)**
+- Action generation **[clipcap-base-captioning-ft-hl-actions](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-actions)**
+- Rationale  generation **[clipcap-base-captioning-ft-hl-rationales](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-rationales)**
 - Narrative generation **[clipcap-base-captioning-ft-hl-narratives](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-narratives)**
 
 This is repo an adaptation of the [original repo](https://github.com/rmokady/CLIP_prefix_caption/tree/main) that **makes it easy to run pre-trained and finetuned checkpoints**.
 
 ## Models
 
-We finetune both the LM and the Mapping network, for further details see the models cards.
+We finetune both the LM and the Mapping network, for further details see the model cards.
 
 ## Installation
 ```bash
