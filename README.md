@@ -12,7 +12,7 @@ We provide ClipCap **fine-tuned models** (all available on 🤗) for :
 - Rationale  generation **[clipcap-base-captioning-ft-hl-rationales](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-rationales)**
 - Narrative generation **[clipcap-base-captioning-ft-hl-narratives](https://huggingface.co/michelecafagna26/clipcap-base-captioning-ft-hl-narratives)**
 
-This is repo an adaptation of the [original repo](https://github.com/rmokady/CLIP_prefix_caption/tree/main) that **makes it easy to run pre-trained and finetuned checkpoints**.
+This repo is an adaptation of the [original repo](https://github.com/rmokady/CLIP_prefix_caption/tree/main) that **makes it easy to run pre-trained and finetuned checkpoints, in inference**. If you want to train a new model we suggest using the original repo.
 
 ## Models
 
