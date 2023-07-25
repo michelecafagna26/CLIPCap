@@ -80,7 +80,7 @@ model.generate_beam(embed=prefix_embed)[0]
 
 ## Citations
 
-If you use this code, please consider citing, our work:
+If you use this code, please consider citing:
 ```BibTeX
 @inproceedings{Cafagna2023HLDG,
   title={HL Dataset: Grounding High-Level Linguistic Concepts in Vision},
